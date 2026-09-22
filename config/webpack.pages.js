@@ -10,6 +10,7 @@ function createPages(template, filename, chunks) {
 
 const htmlPages = [
   createPages('./src/index.html', './index.html', ['index']),
+  createPages('./src/pages/game-diceduel.html', './game-diceduel.html', ['index','game-dicecuel']),
 ]
 
 module.exports = htmlPages
