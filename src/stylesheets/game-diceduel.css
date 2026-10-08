@@ -38,7 +38,7 @@ body.dices {
 .dices .game-description {
     margin: 16px 0 32px;
     font-size: 18px;
-    color: #4c6770;
+    color: #000;
     line-height: 1.3;
     text-align: center;
 }
@@ -52,7 +52,7 @@ body.dices {
 
 .dices .dice-card {
     border-radius: 24px;
-    background-color: #4c6770;
+    background-color: #000;
     color: #fff;
     padding: 24px;
     text-align: center;
@@ -65,4 +65,81 @@ body.dices {
 
 .dices .dice {
     font-size: 130px;
+}
+
+.dices .roll-button {
+    width: 100%;
+    margin-top: 24px;
+    border: 0;
+    border-radius: 20px;
+    padding: 20px 24px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dices .status {
+    border: 2px solid #fff;
+    padding: 34px;
+}
+
+.dices .status-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dices .score-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dices .score-item {
+    color: #fff;
+    text-align: center;
+}
+
+.dices .score-name {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dices .score {
+    font-size: 40px;
+    font-weight: bold;
+    width: 75px;
+}
+
+.dices .result {
+    margin-top: 14px;
+    border-radius: 18px;
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.dices .history-title {
+    margin-bottom: 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dices .history-item {
+    border-radius: 14px;
+    padding: 11px 14px;
+    margin-bottom: 10px;
+    background: #bab9de;
+    color: #fff;
+}
+
+.dices .history-red {
+    background: #df5c7d;
+}
+
+.dices .history-green {
+    background: #59cb68;
 }
