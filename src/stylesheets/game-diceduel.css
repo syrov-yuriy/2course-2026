@@ -143,3 +143,22 @@ body.dices {
 .dices .history-green {
     background: #59cb68;
 }
+
+.dices .dice.dice-roll {
+    animation: dice-roll 0.30s linear infinite;
+}
+
+@keyframes dice-roll {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    33% {
+        transform: rotate(10deg) scale(1.08)
+    }
+    67% {
+        transform: rotate(-10deg) scale(1)
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
