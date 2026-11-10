@@ -5,9 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
   </head>
-  <body>
-    <h1>Главная</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum atque consectetur modi necessitatibus minima laboriosam molestiae similique autem tempore exercitationem, sint alias eius magni et delectus! Obcaecati ipsum modi dolor!</p>
-    <a href="/game-diceduel.html">Игра Дуэль на кубиках</a>
+  <body class="events">
+    <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top">EVENT-СЕРВИС</a>
+      <nav class="menu" aria-label="Основное меню">
+        <a href="./index.html">События</a>
+        <a href="./about.html">О проекте</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="events">
+    <h1>Афиша событий</h1>
+
+    <div class="filters">
+      <button class="button active" type="button" data-category="all">Все</button>
+      <button class="button" type="button" data-category="category1">Категория 1</button>
+      <button class="button" type="button" data-category="category2">Категория 2</button>
+      <button class="button" type="button" data-category="category3">Категория 3</button>
+    </div>
+
+    <div class="cards">
+      <article class="card" data-filter="category1">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h2>Городской маркет</h2>
+          <span class="category">Категория 1</span>
+          <p>Локальные бренды, мастерские и уличная еда на одной площадке.</p>
+          <a class="button" href="./events/event1.html">Подробнее</a>
+        </div>
+      </article>
+
+      <article class="card" data-filter="category2">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h2>Вечер джаза</h2>
+          <span class="category">Категория 2</span>
+          <p>Живой концерт с классикой джаза и авторскими композициями.</p>
+          <a class="button" href="./events/event2.html">Подробнее</a>
+        </div>
+      </article>
+
+      <article class="card" data-filter="category3">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h2>Выставка плакатов</h2>
+          <span class="category">Категория 3</span>
+          <p>Работы молодых дизайнеров и экскурсия по выставке.</p>
+          <a class="button" href="./events/event3.html">Подробнее</a>
+        </div>
+      </article>
+
+      <article class="card" data-filter="category1">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h2>Открытая мастерская</h2>
+          <span class="category">Категория 1</span>
+          <p>Практическое занятие, где можно сделать вещь своими руками.</p>
+          <button class="button" type="button">Подробнее</button>
+        </div>
+      </article>
+
+      <article class="card" data-filter="category2">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h2>Кино под открытым небом</h2>
+          <span class="category">Категория 2</span>
+          <p>Вечерний показ фильма во дворе культурного центра.</p>
+          <button class="button" type="button">Подробнее</button>
+        </div>
+      </article>
+
+      <article class="card" data-filter="category3">
+        <div class="card-image"></div>
+        <div class="card-content">
+          <h2>Прогулка с гидом</h2>
+          <span class="category">Категория 3</span>
+          <p>Маршрут по городу с историями о знакомых местах.</p>
+          <button class="button" type="button">Подробнее</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="more-events">
+      <button class="button" type="button">Показать еще</button>
+    </div>
+  </main>
   </body>
 </html>

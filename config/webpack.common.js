@@ -9,6 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/javascripts/index.js',
+    events: './src/javascripts/events.js',
     'game-dicecuel': './src/javascripts/game-diceduel.js'
   },
   output: {
