@@ -19,78 +19,40 @@
   <main class="container" id="events">
     <h1>Афиша событий</h1>
 
-    <div class="filters">
-      <button class="button active" type="button" data-category="all">Все</button>
-      <button class="button" type="button" data-category="category1">Категория 1</button>
-      <button class="button" type="button" data-category="category2">Категория 2</button>
-      <button class="button" type="button" data-category="category3">Категория 3</button>
+    <div class="filter-container">
+        <div class="filters">
+            <button class="button active" type="button" data-category="all">Все</button>
+            <button class="button" type="button" data-category="category1">Категория 1</button>
+            <button class="button" type="button" data-category="category2">Категория 2</button>
+            <button class="button" type="button" data-category="category3">Категория 3</button>
+        </div>
+        <div class="sorting">
+            <label for="sort-select">Сортировка</label>
+            <select class="sort-select" id="sort-select">
+                <option value="default">По умолчанию</option>
+                <option value="title-asc">По названию А-Я</option>
+                <option value="title-desc">По названию Я-А</option>
+            </select>
+        </div>
     </div>
 
-    <div class="cards">
-      <article class="card" data-filter="category1">
-        <div class="card-image"></div>
-        <div class="card-content">
-          <h2>Городской маркет</h2>
-          <span class="category">Категория 1</span>
-          <p>Локальные бренды, мастерские и уличная еда на одной площадке.</p>
-          <a class="button" href="./events/event1.html">Подробнее</a>
-        </div>
-      </article>
-
-      <article class="card" data-filter="category2">
-        <div class="card-image"></div>
-        <div class="card-content">
-          <h2>Вечер джаза</h2>
-          <span class="category">Категория 2</span>
-          <p>Живой концерт с классикой джаза и авторскими композициями.</p>
-          <a class="button" href="./events/event2.html">Подробнее</a>
-        </div>
-      </article>
-
-      <article class="card" data-filter="category3">
-        <div class="card-image"></div>
-        <div class="card-content">
-          <h2>Выставка плакатов</h2>
-          <span class="category">Категория 3</span>
-          <p>Работы молодых дизайнеров и экскурсия по выставке.</p>
-          <a class="button" href="./events/event3.html">Подробнее</a>
-        </div>
-      </article>
-
-      <article class="card" data-filter="category1">
-        <div class="card-image"></div>
-        <div class="card-content">
-          <h2>Открытая мастерская</h2>
-          <span class="category">Категория 1</span>
-          <p>Практическое занятие, где можно сделать вещь своими руками.</p>
-          <button class="button" type="button">Подробнее</button>
-        </div>
-      </article>
-
-      <article class="card" data-filter="category2">
-        <div class="card-image"></div>
-        <div class="card-content">
-          <h2>Кино под открытым небом</h2>
-          <span class="category">Категория 2</span>
-          <p>Вечерний показ фильма во дворе культурного центра.</p>
-          <button class="button" type="button">Подробнее</button>
-        </div>
-      </article>
-
-      <article class="card" data-filter="category3">
-        <div class="card-image"></div>
-        <div class="card-content">
-          <h2>Прогулка с гидом</h2>
-          <span class="category">Категория 3</span>
-          <p>Маршрут по городу с историями о знакомых местах.</p>
-          <button class="button" type="button">Подробнее</button>
-        </div>
-      </article>
-    </div>
+    <div class="cards"></div>
 
     <div class="more-events">
       <button class="button" type="button">Показать еще</button>
     </div>
+
+    <template id="event-card">
+        <article class="card">
+            <div class="card-image"></div>
+            <div class="card-content">
+                <h2></h2>
+                <div class="card-cotegories"></div>
+                <p></p>
+                <a class="button">Подробнее</a>
+            </div>
+        </article>
+    </template>
   </main>
   </body>
 </html>

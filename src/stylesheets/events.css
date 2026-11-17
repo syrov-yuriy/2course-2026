@@ -141,6 +141,12 @@ body.events {
   margin-top: auto;
 }
 
+.events .card-cotegories {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .events a.button {
   display: inline-flex;
   align-items: center;
@@ -198,4 +204,23 @@ body.events {
 
 .events .event-facts dd {
   margin: 4px 0 0;
+}
+
+.events .filter-container {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.events .sorting {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.events .sort-select {
+    padding: 8px 12px;
+    border: 1px solid #888;
+
 }
