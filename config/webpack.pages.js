@@ -16,6 +16,7 @@ const htmlPages = [
   createPages('./src/pages/events/event2.html', './events/event2.html', ['index', 'events']),
   createPages('./src/pages/events/event3.html', './events/event3.html', ['index', 'events']),
   createPages('./src/pages/game-diceduel.html', './game-diceduel.html', ['index','game-dicecuel']),
+  createPages('./src/pages/quiz.html', './quiz.html', ['index','quiz']),
 ]
 
 module.exports = htmlPages

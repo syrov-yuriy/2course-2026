@@ -10,7 +10,8 @@ module.exports = {
   entry: {
     index: './src/javascripts/index.js',
     events: './src/javascripts/events.js',
-    'game-dicecuel': './src/javascripts/game-diceduel.js'
+    'game-dicecuel': './src/javascripts/game-diceduel.js',
+    quiz: './src/javascripts/quiz.js'
   },
   output: {
     filename: '[name].js',
